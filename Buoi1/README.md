@@ -1,18 +1,14 @@
-# Tổng Quan về C# và Lập Trình Hướng Đối Tượng
-
+# Tổng Quan về C#
 ## Mục Lục
-- [Giới thiệu](#giới-thiệu)
-- [Tổng quan về C# và lập trình hướng đối tượng](#tổng-quan-về-c-và-lập-trình-hướng-đối-tượng)
+- [Tổng quan về C#](#tổng-quan-về-c-và-lập-trình-hướng-đối-tượng)
 - [Quy tắc đặt tên trong C#](#quy-tắc-đặt-tên-trong-c)
 - [Các kiểu dữ liệu cơ bản](#các-kiểu-dữ-liệu-cơ-bản)
 - [Nhập, xuất và chuyển đổi kiểu dữ liệu](#nhập-xuất-và-chuyển-đổi-kiểu-dữ-liệu)
 - [Toán tử trong C#](#toán-tử-trong-c)
 - [Cấu trúc lệnh rẽ nhánh](#cấu-trúc-lệnh-rẽ-nhánh)
 
-## Giới thiệu
-Dự án này cung cấp tổng quan về ngôn ngữ lập trình C# và lập trình hướng đối tượng, bao gồm các quy tắc đặt tên, kiểu dữ liệu, toán tử, cấu trúc điều kiện, cũng như cách nhập/xuất dữ liệu và ép kiểu trong C#.
 
-## Tổng quan về C# và lập trình hướng đối tượng
+## Tổng quan về C#
 C# là một ngôn ngữ lập trình hướng đối tượng, nơi các chương trình được xây dựng từ các đối tượng tương tác với nhau thông qua các phương thức. Một chương trình C# bao gồm các phần chính sau:
 
 - **Khai báo Namespace**: Sử dụng `using` để nhập các namespace có sẵn như `System`.
