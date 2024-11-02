@@ -235,9 +235,8 @@ Dùng cho các tập hợp dữ liệu dạng bảng, như ma trận.
 - **Thuộc tính:**
     - **Count**: Số phần tử trong Queue.
 - **Phương thức:**
-    - **Enqueue(object value)**: Trả về giá trị của đối tượng tại vị trí đầu trong Queue (phần tử thêm vào đầu tiên) nhưng không xoá phần tử khỏi Queue.
-    - **Dequeue()**: Trả về giá trị của đối tượng tại vị trí đầu trong Queue(phần tử thêm vào đầu tiên) đồng thời xoá phần tử khỏi Queue.
-    - **Push(object Value)**: Thêm một phần tử có giá trị Value vào đầu Queue.
+    - **Enqueue(object value)**: Tthêm phần tử vào cuối hàng đợi.
+    - **Dequeue()**: lấy phần tử ra khỏi đầu hàng đợi.
     - **ToArray()**: Tạo ra 1 mảng các object  chứa tất cả các phần tử trong Queue và trả về mảng đó.
     - **Clear()**: Xoá tất cả các phần tử trong Queue .
     - **Contains(object value)**: Kiểm tra đối tượng Value có tồn tại trong Queue hay không.
