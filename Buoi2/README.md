@@ -32,16 +32,7 @@ Vòng lặp `for` lặp lại một khối mã khi điều kiện còn đúng.
     {
         // Code block
     }
-    ```
-      ```
-    Trong đó: 
-        - `condition` là một biểu thức logic bắt buộc phải có với kết quả trả về bắt buộc là `true` hoặc `false`.
-        - Từ khóa `do` và `while` biểu thị đây là một `vòng lặp do while`. Các câu lệnh trong khối lệnh sẽ được lặp lại đến khi không còn thỏa mãn điều kiện lặp sẽ kết thúc `vòng lặp do while`.
-    Tiến trình:
-        - Đầu tiên trình biên dịch sẽ đi vào dòng `do` và thực hiện khối lệnh bên trong. Sau đó khi gặp ký tự `}` sẽ kiểm tra điều kiện lặp có thỏa mãn hay không. Nếu kết quả là `true` thì sẽ quay lại ký tự `{` thực hiện khối lệnh. Quá trình chỉ kết thúc khi điều kiện lặp là `false`.
-        - Điều kiện lặp luôn bằng `true` thì `vòng lặp do while` sẽ trở thành `vòng lặp vô tận`.
-        - Điều kiện lặp luôn bằng `false` thì vòng lặp sẽ `không được thực thi`.
-    ```  
+    ``` 
 - **Ví dụ:**
     ```csharp
     for (int i = 1; i <= 5; i++)
