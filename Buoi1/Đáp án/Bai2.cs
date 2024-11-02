@@ -11,6 +11,7 @@ namespace BaiTapBuoi1
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //#Bài2
             double Vo = 20;
             double theTa = 30;
             double g = 9.8;
