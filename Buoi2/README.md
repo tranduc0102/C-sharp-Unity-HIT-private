@@ -17,6 +17,7 @@
     - [Hashtable](#2-hashtable)
     - [Stack](#3-stack)
     - [Queue](#4-queue)
+    - [Dictionary](#5--dictionary)
 
 ---
 
@@ -243,5 +244,34 @@ Dùng cho các tập hợp dữ liệu dạng bảng, như ma trận.
 - **Thuộc tính:**
     - **Count**: Số phần tử trong Queue.
 - **Phương thức:**
-    - **Enqueue(object value)**: Thêm phần tử vào cuối Queue.
-    - **
+    - **Enqueue(object value)**: Trả về giá trị của đối tượng tại vị trí đầu trong Queue (phần tử thêm vào đầu tiên) nhưng không xoá phần tử khỏi Queue.
+    - **Dequeue()**: Trả về giá trị của đối tượng tại vị trí đầu trong Queue(phần tử thêm vào đầu tiên) đồng thời xoá phần tử khỏi Queue.
+    - **Push(object Value)**: Thêm một phần tử có giá trị Value vào đầu Queue.
+    - **ToArray()**: Tạo ra 1 mảng các object  chứa tất cả các phần tử trong Queue và trả về mảng đó.
+    - **Clear()**: Xoá tất cả các phần tử trong Queue .
+    - **Contains(object value)**: Kiểm tra đối tượng Value có tồn tại trong Queue hay không.
+### 5.  Dictionary
+Tương tự như List, `Dictionary` chính là sự thay thế cho Collections Hashtable đã được học. Cho nên về khái niệm hay sử dụng thì Dictionary đều sẽ giống Hashtable.
+
+- **Cú pháp:**
+    ```csharp
+    // khởi tạo 1 Dictionary rỗng với Key và Value đều có kiểu dữ liệu là chuỗi.
+    Dictionary<string, string> MyHash = new Dictionary<string, string>(); 
+    // khởi tạo 1 Dictionary rỗng với Key và Value đều có kiểu dữ liệu là chuỗi.
+    Dictionary<string, string> MyHash = new Dictionary<string, string>(); 
+- **Thuộc tính:**
+    - **Count**: Trả về 1 số nguyên là số phần tử hiện có trong Dictionary.
+    - **Keys**: Trả về 1 danh sách chứa các Key trong Dictionary.
+    - **Values**:  Trả về 1 danh sách chứa các Value trong Dictionary.
+- **Phương thức:**
+    - **Add(TKey Key, TValue Value)**: Thêm 1 cặp Key - Value vào Dictionary.
+    - **Clear()**: Xoá tất cả các phần tử trong Dictionary.
+    - **ContainsKey(TKey Key)**: Kiểm tra đối tượng Key có tồn tại trong Dictionary hay không.
+    - **ContainsValue(TValue Value)**: Kiểm tra đối tượng Value có tồn tại trong Dictionary hay không.
+    - **Remove(TKey Key)**: Xoá đối tượng có Key xuất hiện đầu tiên trong Dictionary.
+    - **TryGetValue(TKey Key, TValue Value)**: Kiểm tra Key có tồn tại hay không. Nếu có sẽ trả về true đồng thời trả về giá trị Value tương ứng qua biến Value. Ngược lại trả về false.
+- **Một số lưu ý về Dictionary:**
+    - Mỗi một phần tử trong Dictionary (bao gồm 1 cặp Key - Value) được C# định nghĩa là 1 đối tượng có kiểu: KeyValuePair<TKey, TValue>
+    - Trong đó, có 2 thuộc tính chính:
+        Key: trả về giá trị Key của phần tử hiện tại.
+        Value: trả về giá trị Value của phần tử hiện tại.
