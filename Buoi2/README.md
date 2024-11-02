@@ -1,22 +1,22 @@
 # Cấu trúc Vòng lặp và Mảng trong C#
 
 ## Mục lục
-1. [Cấu trúc Vòng lặp](#cấu-trúc-vòng-lặp)
+1. [Cấu trúc Vòng lặp](#1-cấu-trúc-vòng-lặp)
     - [Vòng lặp `for`](#vòng-lặp-for)
     - [Vòng lặp `foreach`](#vòng-lặp-foreach)
     - [Vòng lặp `while`](#vòng-lặp-while)
     - [Vòng lặp `do-while`](#vòng-lặp-do-while)
     - [Vòng lặp `goto`](#vòng-lặp-goto)
-2. [Từ khóa Điều khiển Luồng](#từ-khóa-điều-khiển-luồng)
-3. [Mảng](#mảng)
+2. [Từ khóa Điều khiển Luồng](#2-từ-khóa-điều-khiển-luồng)
+3. [Mảng](#3-mảng)
     - [Mảng Một Chiều](#mảng-một-chiều)
     - [Mảng Nhiều Chiều](#mảng-nhiều-chiều)
-4. [Định dạng Code trong Visual Studio](#định-dạng-code-trong-visual-studio)
-5. [Collection trong C#](#collection-trong-c-sharp)
-    - [ArrayList](#arraylist)
-    - [Hashtable](#hashtable)
-    - [Stack](#stack)
-    - [Queue](#queue)
+4. [Định dạng Code trong Visual Studio](#4-định-dạng-code-trong-visual-studio)
+5. [Collection trong C#](#5-collection-trong-c)
+    - [ArrayList](#1-arraylist)
+    - [Hashtable](#2-hashtable)
+    - [Stack](#3-stack)
+    - [Queue](#4-queue)
 
 ---
 
