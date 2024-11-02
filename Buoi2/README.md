@@ -12,7 +12,7 @@
     - [Mảng Một Chiều](#mảng-một-chiều)
     - [Mảng Nhiều Chiều](#mảng-nhiều-chiều)
 4. [Định dạng Code trong Visual Studio](#định-dạng-code-trong-visual-studio)
-5. [Collection trong C#](#collection-trong-csharp)
+5. [Collection trong C#](#collection-trong-c-sharp)
     - [ArrayList](#arraylist)
     - [Hashtable](#hashtable)
     - [Stack](#stack)
@@ -32,7 +32,7 @@ Vòng lặp `for` lặp lại một khối mã khi điều kiện còn đúng.
         // Code block
     }
     ```
-    ```
+      ```
     Trong đó: 
         - `condition` là một biểu thức logic bắt buộc phải có với kết quả trả về bắt buộc là `true` hoặc `false`.
         - Từ khóa `do` và `while` biểu thị đây là một `vòng lặp do while`. Các câu lệnh trong khối lệnh sẽ được lặp lại đến khi không còn thỏa mãn điều kiện lặp sẽ kết thúc `vòng lặp do while`.
@@ -40,7 +40,7 @@ Vòng lặp `for` lặp lại một khối mã khi điều kiện còn đúng.
         - Đầu tiên trình biên dịch sẽ đi vào dòng `do` và thực hiện khối lệnh bên trong. Sau đó khi gặp ký tự `}` sẽ kiểm tra điều kiện lặp có thỏa mãn hay không. Nếu kết quả là `true` thì sẽ quay lại ký tự `{` thực hiện khối lệnh. Quá trình chỉ kết thúc khi điều kiện lặp là `false`.
         - Điều kiện lặp luôn bằng `true` thì `vòng lặp do while` sẽ trở thành `vòng lặp vô tận`.
         - Điều kiện lặp luôn bằng `false` thì vòng lặp sẽ `không được thực thi`.
-    ```   
+    ```  
 - **Ví dụ:**
     ```csharp
     for (int i = 1; i <= 5; i++)
@@ -107,6 +107,7 @@ Luôn thực hiện ít nhất một lần trước khi kiểm tra điều kiệ
         i++;
     } while (i < 5);
     ```
+
 ### Vòng lặp `goto`
 Điều khiển luồng mã bằng cách nhảy đến một nhãn nhất định.
 
@@ -142,7 +143,6 @@ Luôn thực hiện ít nhất một lần trước khi kiểm tra điều kiệ
 - **try, catch, finally**: Xử lý ngoại lệ.
 
 ## 3. Mảng
-
 ### Mảng Một Chiều
 Mảng là tập hợp các phần tử có cùng kiểu dữ liệu.
 
@@ -244,5 +244,4 @@ Dùng cho các tập hợp dữ liệu dạng bảng, như ma trận.
     - **Count**: Số phần tử trong Queue.
 - **Phương thức:**
     - **Enqueue(object value)**: Thêm phần tử vào cuối Queue.
-    - **Dequeue()**: Lấy và xóa phần tử ở đầu.
-    - **Peek()**: Lấy phần tử ở đầu
+    - **
