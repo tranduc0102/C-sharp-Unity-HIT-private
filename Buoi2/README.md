@@ -171,13 +171,13 @@ Dùng cho các tập hợp dữ liệu dạng bảng, như ma trận.
 
 ## 5. Collection trong C#
 
-### 1. ArrayList
-`ArrayList` là một Collection giống như mảng nhưng có thể thay đổi kích thước linh hoạt và quản lý các đối tượng qua chỉ số.
+### 1. List
+`List` là một Collection giống như mảng nhưng có thể thay đổi kích thước linh hoạt và quản lý các đối tượng qua chỉ số.
 
 - **Cú pháp:**
     ```csharp
-    ArrayList myArray = new ArrayList();
-    ArrayList myArray2 = new ArrayList(5); // Với sức chứa ban đầu là 5
+    List<data type> myArray = new List<data type>();
+    List<data type> myArray2 = new List<data type>(5); // Với sức chứa ban đầu là 5
     ```
 - **Thuộc tính:**
     - **Count**: Số phần tử hiện có trong ArrayList.
