@@ -13,7 +13,7 @@
     - [Mảng Nhiều Chiều](#mảng-nhiều-chiều)
 4. [Định dạng Code trong Visual Studio](#4-định-dạng-code-trong-visual-studio)
 5. [Collection trong C#](#5-collection-trong-c)
-    - [ArrayList](#1-arraylist)
+    - [ArrayList](#-List)
     - [Hashtable](#2-hashtable)
     - [Stack](#3-stack)
     - [Queue](#4-queue)
