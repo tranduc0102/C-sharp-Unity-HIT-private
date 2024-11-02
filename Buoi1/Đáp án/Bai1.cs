@@ -34,7 +34,7 @@ namespace BaiTapBuoi1
             thoiGianConLai = (thoiGianConLai * 2 - Math.Floor((thoiGianConLai * 2))) / 2;
             if (aplha >= 0)
             {
-                quangDuongConLai += A * Math.Cos(aplha) + A * Math.Cos(W * thoiGianConLai * T - aplha);
+                quangDuongConLai = A * Math.Cos(aplha) + A * Math.Cos(W * thoiGianConLai * T - aplha);
             }
             else
             {
