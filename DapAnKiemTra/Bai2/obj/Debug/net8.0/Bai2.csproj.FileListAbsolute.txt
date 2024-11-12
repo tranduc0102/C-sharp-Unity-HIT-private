@@ -1,0 +1,14 @@
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\bin\Debug\net8.0\Bai2.exe
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\bin\Debug\net8.0\Bai2.deps.json
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\bin\Debug\net8.0\Bai2.runtimeconfig.json
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\bin\Debug\net8.0\Bai2.dll
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\bin\Debug\net8.0\Bai2.pdb
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.AssemblyInfoInputs.cache
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.AssemblyInfo.cs
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.csproj.CoreCompileInputs.cache
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.dll
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\refint\Bai2.dll
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.pdb
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\Bai2.genruntimeconfig.cache
+D:\ToolByTranDuc\DapAnKiemTra\Bai2\obj\Debug\net8.0\ref\Bai2.dll
