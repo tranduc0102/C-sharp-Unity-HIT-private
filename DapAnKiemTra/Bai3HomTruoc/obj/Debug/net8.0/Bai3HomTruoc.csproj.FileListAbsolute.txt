@@ -1,0 +1,14 @@
+C:\Users\tranh\source\repos\Bai3HomTruoc\bin\Debug\net8.0\Bai3HomTruoc.exe
+C:\Users\tranh\source\repos\Bai3HomTruoc\bin\Debug\net8.0\Bai3HomTruoc.deps.json
+C:\Users\tranh\source\repos\Bai3HomTruoc\bin\Debug\net8.0\Bai3HomTruoc.runtimeconfig.json
+C:\Users\tranh\source\repos\Bai3HomTruoc\bin\Debug\net8.0\Bai3HomTruoc.dll
+C:\Users\tranh\source\repos\Bai3HomTruoc\bin\Debug\net8.0\Bai3HomTruoc.pdb
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.AssemblyInfoInputs.cache
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.AssemblyInfo.cs
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.csproj.CoreCompileInputs.cache
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.dll
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\refint\Bai3HomTruoc.dll
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.pdb
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\Bai3HomTruoc.genruntimeconfig.cache
+C:\Users\tranh\source\repos\Bai3HomTruoc\obj\Debug\net8.0\ref\Bai3HomTruoc.dll
