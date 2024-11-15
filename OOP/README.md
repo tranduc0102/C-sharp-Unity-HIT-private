@@ -7,6 +7,7 @@
     - [2. Tính trừu tượng (Abstraction)](#2-tính-trừu-tượng-abstraction)
     - [3. Tính kế thừa (Inheritance)](#3-tính-kế-thừa-inheritance)
     - [4. Tính đa hình (Polymorphism)](#4-tính-đa-hình-polymorphism)
+      
 [Nguyên tắc thiết kế trong lập trình hướng đối tướng (SOLID)](#nguyên-tắc-thiết-kế-solid-trong-lập-trình-hướng-đối-tượng)
 - [1.Single Resonsibility ](#1-single-responsibility-principle-srp---nguyên-tắc-đơn-trách-nhiệm)
 - [2.Open/Close](#2-openclosed-principle-ocp---nguyên-tắc-đóng-mở)
