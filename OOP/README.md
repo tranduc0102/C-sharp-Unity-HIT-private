@@ -41,7 +41,7 @@
 - Đối tượng thuộc các lớp khác nhau có thể hiểu cùng một thông điệp theo cách riêng.
 - Giúp các lớp mở rộng linh hoạt mà không cần thay đổi mã hiện tại.
 
-## 3. Ví dụ minh họa:
+## 5. Ví dụ minh họa:
 Xét các hình: Hình tròn, Hình vuông, Hình chữ nhật.  
 Thay vì tạo từng lớp riêng lẻ, ta xây dựng một lớp trừu tượng `Shape`:
 
@@ -69,7 +69,7 @@ public class Rectangle : Shape
         DisplayArea(area);
     }
 }
-
+```
 
 # Nguyên tắc thiết kế SOLID trong Lập trình Hướng đối tượng
 
@@ -94,6 +94,7 @@ public class Rectangle : Shape
           return employee.Salary * 1.1;
       }
   }
+  ```
 - **Giải thích:**
   - Lớp `Employee` chỉ giữ thông tin nhân viên, đảm nhiệm trách nhiệm duy nhất là lưu trữ dữ liệu nhân viên.
   - Lớp `SalaryCalculator` chịu trách nhiệm tính toán lương. Việc tách chức năng này giúp đảm bảo mỗi lớp chỉ có một lý do để thay đổi. Nếu công thức tính lương thay đổi, chỉ cần sửa lớp `SalaryCalculator`, không ảnh hưởng đến lớp `Employee`.
@@ -127,15 +128,16 @@ public class Rectangle : Shape
         return Math.PI * Radius * Radius;
     }
   }
+  ```
 - **Giải thích:**
   - Lớp `Shape` là lớp cơ sở. Các lớp con như `Rectangle` và `Circle` mở rộng `Shape` và cung cấp cách diện tích riêng.
   - Khi thêm một lớp hình mới ` Ví dụ: Triangle`, chỉ cần tạo một lớp mới kế thừa từ shape mà không cần phải sửa đổi code của các lớp hiện tại.
 
 
 ## 3. Liskov Substitution Principle (LSP) - Nguyên tắc thay thế Liskov
-- **Mô tả:**Ta có thể thay thế bất kỳ đối tượng của một lớp con bằng đối tượng của lớp cha mà không làm thay đổi tính đúng đắn của chương trình.**.
+- **Mô tả:** Ta có thể thay thế bất kỳ đối tượng của một lớp con bằng đối tượng của lớp cha mà không làm thay đổi tính đúng đắn của chương trình.**.
 - **Giải thích:** Các lớp con phải đảm bảo rằng chúng không làm mất tính đúng đắn của chương trình khi thay thế lớp cha.
-- **Ví dụ sai: **
+- **Ví dụ sai:**
   ```csharp
   public class Bird
   {
@@ -152,9 +154,10 @@ public class Rectangle : Shape
       // Sẽ gây lỗi nếu Ostrich thay thế Bird và gọi phương thức Fly() vì Ostrich không bay
       public override void Fly() { throw new NotImplementedException(); }
   }
-- **Giải thích lỗi: **
+  ```
+- **Giải thích lỗi:**
     - Nếu dùng Bird làm cha, chúng ta kỳ vọng tất cả các lớp con có thể "bay". Tuy nhiên, Ostrich `đà điểu` không thể bay, dẫn đến việc phá vỡ tính đúng đắn của chương trình khi thay thế Bird bằng Ostrich.
-- **Cách sửa: *
+- **Cách sửa:**
     - Đừng đưa Fly vào lớp cha Bird. Thay vào đó, tách thành một interface IFlyingBird chỉ áp dụng cho các loài chim biết bay
       ```csharp
       public interface IFlyingBird
@@ -171,32 +174,33 @@ public class Rectangle : Shape
      {
             // Không cần phương thức Fly()
      }
-
+     ```
 ## 4. Interface Segregation Principle (ISP) - Nguyên tắc phân chia giao diện
 - **Mô tả:** Không nên buộc một lớp phải triển khai các phương thức mà nó không sử dụng. Nên chia nhỏ các giao diện thành nhiều giao diện nhỏ hơn, đặc trưng cho từng mục đích sử dụng.**.
 - **Giải thích:** Các lớp chỉ cần triển khai các phương thức trong giao diện mà chúng thực sự cần.
 - **Ví dụ:**
   ```csharp
-public interface IWorker
-{
-    void Work();
-}
+  public interface IWorker
+  {
+     void Work();
+  }
 
-public interface IEater
-{
-    void Eat();
-}
+  public interface IEater
+  {
+     void Eat();
+  }
 
-public class Human : IWorker, IEater
-{
-    public void Work() { /* Làm việc */ }
-    public void Eat() { /* Ăn uống */ }
-}
+  public class Human : IWorker, IEater
+  {
+     public void Work() { /* Làm việc */ }
+     public void Eat() { /* Ăn uống */ }
+  }
 
-public class Robot : IWorker
-{
-    public void Work() { /* Làm việc */ }
-}
+  public class Robot : IWorker
+  {
+     public void Work() { /* Làm việc */ }
+  }
+  ```
 -**Giải thích:**
     - Con người `(Human)` vừa làm việc vừa ăn uống, nên triển khai cả IWorker và IEater.
     - Robot chỉ làm việc, không ăn uống, nên chỉ triển khai IWorker.
@@ -206,36 +210,37 @@ public class Robot : IWorker
 - **Giải thích:**  Các module cấp cao và cấp thấp không nên phụ thuộc trực tiếp vào nhau mà nên phụ thuộc vào các interface hoặc lớp trừu tượng.
 - **Ví dụ:**
   ```csharp
-public interface IPrinter
-{
-    void Print(string content);
-}
+  public interface IPrinter
+  {
+     void Print(string content);
+  }
 
-public class LaserPrinter : IPrinter
-{
-    public void Print(string content) { /* In với máy in laser */ }
-}
+  public class LaserPrinter : IPrinter
+  {
+     public void Print(string content) { /* In với máy in laser */ }
+  }
 
-public class InkJetPrinter : IPrinter
-{
+  public class InkJetPrinter : IPrinter
+  {
     public void Print(string content) { /* In với máy in phun mực */ }
-}
+  }
 
-public class Document
-{
-    private readonly IPrinter _printer;
+  public class Document
+  {
+     private readonly IPrinter _printer;
 
-    public Document(IPrinter printer)
-    {
-        _printer = printer;
-    }
+     public Document(IPrinter printer)
+     {
+         _printer = printer;
+     }
 
-    public void PrintDocument(string content)
-    {
-        _printer.Print(content);
-    }
-}
--**Giải thích:*
+     public void PrintDocument(string content)
+     {
+         _printer.Print(content);
+     }
+  }
+  ```
+-**Giải thích:**
     - Lớp Document phụ thuộc vào abstraction `IPrinter`, không phụ thuộc vào cụ thể `LaserPrinter hay InkJetPrinter`.
     - Nếu cần đổi loại máy in, chỉ cần thay đổi đối tượng truyền vào Document, không cần thay đổi code của lớp Document.
 
