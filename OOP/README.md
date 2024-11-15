@@ -222,7 +222,7 @@ public class Program
 
   - Lớp `SalaryCalculator` chịu trách nhiệm tính toán lương. Việc tách chức năng này giúp đảm bảo mỗi lớp chỉ có một lý do để thay đổi. Nếu công thức tính lương thay đổi, chỉ cần sửa lớp `SalaryCalculator`, không ảnh hưởng đến lớp `Employee`.
 ## 2. Open/Closed Principle (OCP) - Nguyên tắc đóng mở
-- **Mô tả:** Một lớp nên mở để mở rộng nhưng đóng để sửa đổi.**.
+- **Mô tả:** Một lớp nên mở để mở rộng nhưng đóng để sửa đổi.
 - **Giải thích:** Điều này có nghĩa là bạn có thể mở rộng chức năng của lớp (thông qua kế thừa hoặc các cách khác) mà không cần thay đổi mã nguồn hiện tại của lớp đó.
 - **Ví dụ:**
   ```csharp
