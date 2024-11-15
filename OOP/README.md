@@ -1,4 +1,4 @@
-#Lập trình Hướng đối tượng và các nguyên tắc trong thiết kế hướng đối tượng
+# Lập trình Hướng đối tượng và các nguyên tắc trong thiết kế hướng đối tượng
 ## Mục Lục
 [Lập trình hướng đối tượng](#lập-trình-hướng-đối-tượng-oop)
 - [1. Khái niệm cơ bản trong OOP](#1-khái-niệm-cơ-bản-trong-oop)
