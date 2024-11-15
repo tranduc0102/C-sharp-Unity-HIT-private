@@ -206,8 +206,8 @@ public class Program
 
   - Lớp `SalaryCalculator` chịu trách nhiệm tính toán lương. Việc tách chức năng này giúp đảm bảo mỗi lớp chỉ có một lý do để thay đổi. Nếu công thức tính lương thay đổi, chỉ cần sửa lớp `SalaryCalculator`, không ảnh hưởng đến lớp `Employee`.
 ## 2. Open/Closed Principle (OCP) - Nguyên tắc đóng mở
-- **Mô tả:**Một lớp nên mở để mở rộng nhưng đóng để sửa đổi.**.
-- **Giải thích:**Điều này có nghĩa là bạn có thể mở rộng chức năng của lớp (thông qua kế thừa hoặc các cách khác) mà không cần thay đổi mã nguồn hiện tại của lớp đó. .
+- **Mô tả:** Một lớp nên mở để mở rộng nhưng đóng để sửa đổi.**.
+- **Giải thích:** Điều này có nghĩa là bạn có thể mở rộng chức năng của lớp (thông qua kế thừa hoặc các cách khác) mà không cần thay đổi mã nguồn hiện tại của lớp đó.
 - **Ví dụ:**
   ```csharp
   public abstract class Shape
@@ -243,7 +243,7 @@ public class Program
 
 
 ## 3. Liskov Substitution Principle (LSP) - Nguyên tắc thay thế Liskov
-- **Mô tả:** Ta có thể thay thế bất kỳ đối tượng của một lớp con bằng đối tượng của lớp cha mà không làm thay đổi tính đúng đắn của chương trình.**.
+- **Mô tả:** Ta có thể thay thế bất kỳ đối tượng của một lớp con bằng đối tượng của lớp cha mà không làm thay đổi tính đúng đắn của chương trình.
 - **Giải thích:** Các lớp con phải đảm bảo rằng chúng không làm mất tính đúng đắn của chương trình khi thay thế lớp cha.
 - **Ví dụ sai:**
   ```csharp
@@ -282,7 +282,7 @@ public class Program
       {
              // Không cần phương thức Fly()
       }
-     ```
+      ```
 ## 4. Interface Segregation Principle (ISP) - Nguyên tắc phân chia giao diện
 - **Mô tả:** Không nên buộc một lớp phải triển khai các phương thức mà nó không sử dụng. Nên chia nhỏ các giao diện thành nhiều giao diện nhỏ hơn, đặc trưng cho từng mục đích sử dụng.**.
 - **Giải thích:** Các lớp chỉ cần triển khai các phương thức trong giao diện mà chúng thực sự cần.
@@ -310,13 +310,14 @@ public class Program
   }
   ```
 -**Giải thích:**
+
     - Con người `(Human)` vừa làm việc vừa ăn uống, nên triển khai cả IWorker và IEater.
 
     - Robot chỉ làm việc, không ăn uống, nên chỉ triển khai IWorker.
 
     - Điều này giúp các lớp chỉ phải triển khai những giao diện phù hợp, tránh việc viết code không cần thiết.
 ## 5. Dependency Inversion Principle (DIP) - Nguyên tắc phản ngược sự phụ thuộc
-- **Mô tả:** Các module cấp cao không nên phụ thuộc vào các module cấp thấp. Thay vào đó, cả hai nên phụ thuộc vào các abstraction (trừu tượng).**.
+- **Mô tả:** Các module cấp cao không nên phụ thuộc vào các module cấp thấp. Thay vào đó, cả hai nên phụ thuộc vào các abstraction (trừu tượng).
 - **Giải thích:**  Các module cấp cao và cấp thấp không nên phụ thuộc trực tiếp vào nhau mà nên phụ thuộc vào các interface hoặc lớp trừu tượng.
 - **Ví dụ:**
   ```csharp
@@ -351,6 +352,7 @@ public class Program
   }
   ```
 -**Giải thích:**
+
     - Lớp Document phụ thuộc vào abstraction `IPrinter`, không phụ thuộc vào cụ thể `LaserPrinter hay InkJetPrinter`.
 
     - Nếu cần đổi loại máy in, chỉ cần thay đổi đối tượng truyền vào Document, không cần thay đổi code của lớp Document.
