@@ -41,7 +41,7 @@
 - Đối tượng thuộc các lớp khác nhau có thể hiểu cùng một thông điệp theo cách riêng.
 - Giúp các lớp mở rộng linh hoạt mà không cần thay đổi mã hiện tại.
 
-## 5. Ví dụ minh họa:
+### 5. Ví dụ minh họa:
 - Có một lớp trừu tượng Animal đại diện cho các loại động vật.
 - Mỗi loại động vật sẽ kế thừa từ Animal và định nghĩa hành vi cụ thể của mình.
 - Sử dụng tính đa hình để gọi các phương thức của các loại động vật khác nhau mà không cần biết cụ thể đó là loại động vật nào.
