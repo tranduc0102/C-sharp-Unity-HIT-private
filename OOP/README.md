@@ -158,7 +158,7 @@ public class Program
 }
 ```
 **Kết quả khi chạy:**
-```csharp
+```yaml
     Name: Buddy, Age: 3
     Buddy says: Woof Woof!
 
