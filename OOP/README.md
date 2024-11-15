@@ -1,3 +1,17 @@
+
+[Lập trình hướng đối tượng](#lập-trình-hướng-đối-tượng-oop)
+- [1. Khái niệm cơ bản trong OOP](#1-khái-niệm-cơ-bản-trong-oop)
+- [2. Các đặc điểm chính của lập trình hướng đối tượng](#2-các-đặc-điểm-chính-của-lập-trình-hướng-đối-tượng)
+    - [1. Tính đóng gói (Encapsulation)](#1-tính-đóng-gói-encapsulation)
+    - [2. Tính trừu tượng (Abstraction)](#2-tính-trừu-tượng-abstraction)
+    - [3. Tính kế thừa (Inheritance)](#3-tính-kế-thừa-inheritance)
+    - [4. Tính đa hình (Polymorphism)](#4-tính-đa-hình-polymorphism)
+[Nguyên tắc thiết kế trong lập trình hướng đối tướng (SOLID)](#nguyên-tắc-thiết-kế-solid-trong-lập-trình-hướng-đối-tượng)
+- [1.Single Resonsibility ](#1-single-responsibility-principle-srp---nguyên-tắc-đơn-trách-nhiệm)
+- [2.Open/Close](#2-openclosed-principle-ocp---nguyên-tắc-đóng-mở)
+- [3.Liskov Subtitution](#3-liskov-substitution-principle-lsp---nguyên-tắc-thay-thế-liskov)
+- [4.Interface Segregation](#4-interface-segregation-principle-isp---nguyên-tắc-phân-chia-giao-diện)
+- [5.Dependency Inversion](#5-dependency-inversion-principle-dip---nguyên-tắc-phản-ngược-sự-phụ-thuộc)
 # Lập trình hướng đối tượng (OOP)
 
 **Lập trình hướng đối tượng (Object-Oriented Programming - OOP)** là một phương pháp lập trình lấy đối tượng làm nền tảng để xây dựng chương trình. Phương pháp này dựa trên kiến trúc **lớp (class)** và **đối tượng (object)**.
