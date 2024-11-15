@@ -42,34 +42,140 @@
 - Giúp các lớp mở rộng linh hoạt mà không cần thay đổi mã hiện tại.
 
 ## 5. Ví dụ minh họa:
-Xét các hình: Hình tròn, Hình vuông, Hình chữ nhật.  
-Thay vì tạo từng lớp riêng lẻ, ta xây dựng một lớp trừu tượng `Shape`:
+- Có một lớp trừu tượng Animal đại diện cho các loại động vật.
+- Mỗi loại động vật sẽ kế thừa từ Animal và định nghĩa hành vi cụ thể của mình.
+- Sử dụng tính đa hình để gọi các phương thức của các loại động vật khác nhau mà không cần biết cụ thể đó là loại động vật nào.
 
 ```csharp
-public abstract class Shape
+// Tính trừu tượng: Lớp trừu tượng Animal mô tả các đặc điểm chung của mọi động vật.
+public abstract class Animal
 {
-    // Phương thức trừu tượng
-    public abstract void Area();
-    
-    // Đóng gói: phương thức hiển thị chỉ có thể truy cập trong lớp con
-    protected void DisplayArea(double area)
+    // Thuộc tính: Đóng gói thông tin về tên và tuổi.
+    public string Name { get; private set; }
+    public int Age { get; private set; }
+
+    // Constructor để khởi tạo thông tin chung của động vật.
+    protected Animal(string name, int age)
     {
-        Console.WriteLine($"Diện tích hình là: {area}");
+        Name = name;
+        Age = age;
+    }
+
+    // Phương thức trừu tượng: Các lớp con bắt buộc phải cài đặt.
+    public abstract void Speak();
+
+    // Phương thức cụ thể: Có thể dùng chung cho tất cả động vật.
+    public void ShowInfo()
+    {
+        Console.WriteLine($"Name: {Name}, Age: {Age}");
     }
 }
 
-public class Rectangle : Shape
+// Tính kế thừa: Lớp Dog kế thừa từ Animal.
+public class Dog : Animal
 {
-    private float height, width;
+    public Dog(string name, int age) : base(name, age) { }
 
-    // Ghi đè phương thức Area
-    public override void Area()
+    // Tính đa hình: Ghi đè phương thức Speak để định nghĩa hành vi cụ thể.
+    public override void Speak()
     {
-        double area = height * width;
-        DisplayArea(area);
+        Console.WriteLine($"{Name} says: Woof Woof!");
+    }
+}
+
+// Tính kế thừa: Lớp Cat kế thừa từ Animal.
+public class Cat : Animal
+{
+    public Cat(string name, int age) : base(name, age) { }
+
+    // Tính đa hình: Ghi đè phương thức Speak để định nghĩa hành vi cụ thể.
+    public override void Speak()
+    {
+        Console.WriteLine($"{Name} says: Meow!");
+    }
+}
+
+// Một lớp đặc biệt: Bird không chỉ có hành vi bay mà còn có hành vi kêu khác biệt.
+public class Bird : Animal
+{
+    public Bird(string name, int age) : base(name, age) { }
+
+    public override void Speak()
+    {
+        Console.WriteLine($"{Name} says: Tweet Tweet!");
+    }
+
+    // Đóng gói: Một phương thức riêng của Bird.
+    public void Fly()
+    {
+        Console.WriteLine($"{Name} is flying!");
+    }
+}
+
+// Chương trình chính
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Tạo danh sách động vật (đa hình).
+        Animal[] animals = new Animal[]
+        {
+            new Dog("Buddy", 3),
+            new Cat("Whiskers", 2),
+            new Bird("Tweety", 1)
+        };
+
+        // Lặp qua danh sách và gọi các phương thức.
+        foreach (var animal in animals)
+        {
+            animal.ShowInfo(); // Thông tin chung của động vật.
+            animal.Speak();    // Đa hình: Gọi phương thức Speak phù hợp với từng loại động vật.
+            Console.WriteLine();
+        }
+
+        // Gọi phương thức riêng của Bird.
+        Bird bird = new Bird("Sky", 4);
+        bird.ShowInfo();
+        bird.Speak();
+        bird.Fly(); // Tính đóng gói: Phương thức chỉ thuộc về Bird.
     }
 }
 ```
+**Kết quả khi chạy:**
+```csharp
+    Name: Buddy, Age: 3
+    Buddy says: Woof Woof!
+
+    Name: Whiskers, Age: 2
+    Whiskers says: Meow!
+
+    Name: Tweety, Age: 1
+    Tweety says: Tweet Tweet!
+
+    Name: Sky, Age: 4
+    Sky says: Tweet Tweet!
+    Sky is flying!
+```
+## Giải thích:
+
+- **Tính đóng gói (Encapsulation):**
+    - Trong đoạn mã, thuộc tính `Name` và `Age` của lớp `Animal` được khai báo là `private`, nghĩa là chúng không thể được truy cập trực tiếp từ bên ngoài lớp. Các thuộc tính này chỉ có thể được truy cập hoặc thay đổi thông qua các phương thức của lớp, như constructor và getter. Điều này giúp bảo vệ dữ liệu, chỉ cho phép truy cập thông qua các phương thức đã được định nghĩa.
+    - Phương thức `Fly` được đóng gói riêng chỉ cho lớp `Bird`. Phương thức này không thể được gọi từ các lớp khác, giúp đảm bảo rằng hành vi bay chỉ áp dụng cho đối tượng của lớp `Bird`.
+
+- **Tính trừu tượng (Abstraction):**
+    - Lớp `Animal` là lớp trừu tượng (abstract class), có các phương thức và thuộc tính chung cho tất cả các loài động vật như `Name`, `Age`, và phương thức `Speak`. Tuy nhiên, phương thức `Speak` không có cài đặt cụ thể mà chỉ được khai báo dưới dạng trừu tượng, bắt buộc các lớp con phải cài đặt chi tiết hành vi của chúng (ví dụ: `Dog`, `Cat`, `Bird`).
+    - Điều này giúp ẩn đi những chi tiết cài đặt và chỉ để lại các phương thức chung để tương tác với đối tượng, tạo điều kiện cho việc mở rộng hệ thống mà không cần thay đổi mã hiện có.
+
+- **Tính kế thừa (Inheritance):**
+    - Các lớp `Dog`, `Cat`, và `Bird` kế thừa từ lớp cha `Animal`, nghĩa là chúng tự động có các thuộc tính và phương thức của lớp `Animal` (như `Name`, `Age`, và phương thức `ShowInfo`). Điều này giúp giảm thiểu việc lặp lại mã nguồn và tăng tính tái sử dụng mã.
+    - Các lớp con có thể thêm hoặc ghi đè các phương thức để định nghĩa lại hành vi đặc thù của chúng, ví dụ: `Speak`.
+
+- **Tính đa hình (Polymorphism):**
+    - Phương thức `Speak` được ghi đè (override) bởi mỗi lớp con để thể hiện hành vi đặc trưng của chúng (chó sủa, mèo kêu, chim hót, v.v.).
+    - Tính đa hình cho phép bạn gọi phương thức `Speak` trên một biến kiểu `Animal`, nhưng phương thức thực tế được gọi sẽ phụ thuộc vào kiểu đối tượng thực tế mà biến đó tham chiếu đến (ví dụ: đối tượng `Dog`, `Cat`, hoặc `Bird`). Điều này giúp chương trình linh hoạt hơn và dễ mở rộng.
+
+
+
 
 # Nguyên tắc thiết kế SOLID trong Lập trình Hướng đối tượng
 
@@ -97,6 +203,7 @@ public class Rectangle : Shape
   ```
 - **Giải thích:**
   - Lớp `Employee` chỉ giữ thông tin nhân viên, đảm nhiệm trách nhiệm duy nhất là lưu trữ dữ liệu nhân viên.
+
   - Lớp `SalaryCalculator` chịu trách nhiệm tính toán lương. Việc tách chức năng này giúp đảm bảo mỗi lớp chỉ có một lý do để thay đổi. Nếu công thức tính lương thay đổi, chỉ cần sửa lớp `SalaryCalculator`, không ảnh hưởng đến lớp `Employee`.
 ## 2. Open/Closed Principle (OCP) - Nguyên tắc đóng mở
 - **Mô tả:**Một lớp nên mở để mở rộng nhưng đóng để sửa đổi.**.
@@ -131,6 +238,7 @@ public class Rectangle : Shape
   ```
 - **Giải thích:**
   - Lớp `Shape` là lớp cơ sở. Các lớp con như `Rectangle` và `Circle` mở rộng `Shape` và cung cấp cách diện tích riêng.
+
   - Khi thêm một lớp hình mới ` Ví dụ: Triangle`, chỉ cần tạo một lớp mới kế thừa từ shape mà không cần phải sửa đổi code của các lớp hiện tại.
 
 
@@ -171,9 +279,9 @@ public class Rectangle : Shape
       }
 
       public class Ostrich
-     {
-            // Không cần phương thức Fly()
-     }
+      {
+             // Không cần phương thức Fly()
+      }
      ```
 ## 4. Interface Segregation Principle (ISP) - Nguyên tắc phân chia giao diện
 - **Mô tả:** Không nên buộc một lớp phải triển khai các phương thức mà nó không sử dụng. Nên chia nhỏ các giao diện thành nhiều giao diện nhỏ hơn, đặc trưng cho từng mục đích sử dụng.**.
@@ -203,7 +311,9 @@ public class Rectangle : Shape
   ```
 -**Giải thích:**
     - Con người `(Human)` vừa làm việc vừa ăn uống, nên triển khai cả IWorker và IEater.
+
     - Robot chỉ làm việc, không ăn uống, nên chỉ triển khai IWorker.
+
     - Điều này giúp các lớp chỉ phải triển khai những giao diện phù hợp, tránh việc viết code không cần thiết.
 ## 5. Dependency Inversion Principle (DIP) - Nguyên tắc phản ngược sự phụ thuộc
 - **Mô tả:** Các module cấp cao không nên phụ thuộc vào các module cấp thấp. Thay vào đó, cả hai nên phụ thuộc vào các abstraction (trừu tượng).**.
@@ -242,5 +352,6 @@ public class Rectangle : Shape
   ```
 -**Giải thích:**
     - Lớp Document phụ thuộc vào abstraction `IPrinter`, không phụ thuộc vào cụ thể `LaserPrinter hay InkJetPrinter`.
+
     - Nếu cần đổi loại máy in, chỉ cần thay đổi đối tượng truyền vào Document, không cần thay đổi code của lớp Document.
 
