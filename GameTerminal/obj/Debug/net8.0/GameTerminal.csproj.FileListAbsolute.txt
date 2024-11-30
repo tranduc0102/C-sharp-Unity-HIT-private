@@ -1,0 +1,14 @@
+C:\Users\tranh\source\repos\GameTerminal\bin\Debug\net8.0\GameTerminal.exe
+C:\Users\tranh\source\repos\GameTerminal\bin\Debug\net8.0\GameTerminal.deps.json
+C:\Users\tranh\source\repos\GameTerminal\bin\Debug\net8.0\GameTerminal.runtimeconfig.json
+C:\Users\tranh\source\repos\GameTerminal\bin\Debug\net8.0\GameTerminal.dll
+C:\Users\tranh\source\repos\GameTerminal\bin\Debug\net8.0\GameTerminal.pdb
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.AssemblyInfoInputs.cache
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.AssemblyInfo.cs
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.csproj.CoreCompileInputs.cache
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.dll
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\refint\GameTerminal.dll
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.pdb
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\GameTerminal.genruntimeconfig.cache
+C:\Users\tranh\source\repos\GameTerminal\obj\Debug\net8.0\ref\GameTerminal.dll

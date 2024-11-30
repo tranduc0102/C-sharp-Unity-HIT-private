@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\entity\\enemy\\meleeenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\entity\\enemy\\meleeenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\manage\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\manage\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\entity\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\entity\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\manage\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\manage\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\entity\\base\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\entity\\base\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\weapons\\rangeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\weapons\\rangeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|c:\\users\\tranh\\source\\repos\\gameterminal\\game\\objectingame\\weapons\\meleeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36BFD1C3-1C4F-4085-86AC-7A6A34344D35}|GameTerminal.csproj|solutionrelative:game\\objectingame\\weapons\\meleeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\Manage\\GameManager.cs",
+              "RelativeDocumentMoniker": "Game\\Manage\\GameManager.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\Manage\\GameManager.cs",
+              "RelativeToolTip": "Game\\Manage\\GameManager.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAwD8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T18:06:27.567Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GridManager.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\Manage\\GridManager.cs",
+              "RelativeDocumentMoniker": "Game\\Manage\\GridManager.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\Manage\\GridManager.cs",
+              "RelativeToolTip": "Game\\Manage\\GridManager.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwDoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:26:37.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Entity\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Entity\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwAYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:20:34.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeleeEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Enemy\\MeleeEnemy.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Entity\\Enemy\\MeleeEnemy.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Enemy\\MeleeEnemy.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Entity\\Enemy\\MeleeEnemy.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:50:35.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\Weapon.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Weapons\\Weapon.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\Weapon.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Weapons\\Weapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:18:31.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Base\\Character.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Entity\\Base\\Character.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Base\\Character.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Entity\\Base\\Character.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T06:33:36.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Entity\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Entity\\Player\\Player.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Entity\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T18:32:14.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RangeWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\RangeWeapon.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Weapons\\RangeWeapon.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\RangeWeapon.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Weapons\\RangeWeapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:19:31.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MeleeWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\MeleeWeapon.cs",
+              "RelativeDocumentMoniker": "Game\\ObjectInGame\\Weapons\\MeleeWeapon.cs",
+              "ToolTip": "C:\\Users\\tranh\\source\\repos\\GameTerminal\\Game\\ObjectInGame\\Weapons\\MeleeWeapon.cs",
+              "RelativeToolTip": "Game\\ObjectInGame\\Weapons\\MeleeWeapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:19:41.922Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
